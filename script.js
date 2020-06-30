@@ -1,5 +1,8 @@
 function setResult(value) {
     document.getElementById('result').innerHTML = value;
+    if (value.length >20){ //si el texo es mayor a 8
+        alert('El numero ingresado es muy largo');
+	}
 }
 function getResult() {
     return(document.getElementById('result').innerHTML);
@@ -11,7 +14,12 @@ function add(key) {
 }
 function calc() {
     var result = eval(getResult()); 
-    setResult(result);
+    if (result=="Infinity") {
+        alert('No se puede dividir por cero')
+        setResult(0);
+    } else {
+        setResult(result);
+    }
 }
 function del() { 
     setResult(0);
