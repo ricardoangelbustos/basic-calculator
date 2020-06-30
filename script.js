@@ -1,9 +1,5 @@
 function setResult(value) {
     document.getElementById('result').innerHTML = value;
-    if (value.length >20){
-        alert('El numero ingresado es muy largo');
-        setResult(0);
-	}
 }
 function getResult() {
     return(document.getElementById('result').innerHTML);
