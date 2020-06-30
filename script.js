@@ -1,6 +1,6 @@
 function setResult(value) {
     document.getElementById('result').innerHTML = value;
-    if (value.length >20){ //si el texo es mayor a 8
+    if (value.length >20){
         alert('El numero ingresado es muy largo');
 	}
 }
