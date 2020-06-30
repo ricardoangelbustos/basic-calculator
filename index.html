@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="visor">
+                <button id="result">0</button>
+            </div>
+            <div class="row">
+                <button onclick="add('1')">1</button>
+                <button onclick="add('2')">2</button>
+                <button onclick="add('3')">3</button>
+                <button onclick="add('+')">+</button>
+            </div>
+            <div class="row">
+                <button onclick="add('4')">4</button>
+                <button onclick="add('5')">5</button>
+                <button onclick="add('6')">6</button>
+                <button onclick="add('-')">-</button>
+            </div>
+            <div class="row">
+                <button onclick="add('7')">7</button>
+                <button onclick="add('8')">8</button>
+                <button onclick="add('9')">9</button>
+                <button onclick="add('*')">*</button>
+            </div>
+            <div class="row">
+                <div class="zero">
+                    <button onclick="add('0')">0</button>
+                </div>
+                <div class="division">
+                    <button onclick="add('/')">/</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="ac">
+                    <button onclick="del()" class="ac">AC</button>
+                </div>
+                <div class="point">
+                    <button onclick="add('.')">.</button>
+                </div>
+                <div class="equal">
+                    <button onclick="calc()">=</button>
+                </div>
+                            
+            </div>
+        </div>
+    </main>
+    <footer> 
+        Coded by <a href="https://github.com/ricardoangelbustos">Ricardo Bustos</a>.
+    </footer>
+</body>
+</html>
